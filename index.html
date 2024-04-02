@@ -32,102 +32,100 @@
         </style>
     </head>
     <body>
-        
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Portofolio</title>
-            <style>
-                /* CSS Styling */
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-        
-                body {
-                    font-family: Arial, sans-serif;
-                    line-height: 1.6;
-                    background-color: #FFA775;
-                    color: #333;
-                }
-        
-                .navbar {
-                    background-color: #C850A7;
-                    color: #fff;
-                    padding: 10px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-        
-                .menu-toggle {
-                    cursor: pointer;
-                    font-size: 24px;
-                }
-        
-                .nav-links {
-                    list-style-type: none;
-                    display: flex;
-                }
-        
-                .nav-links li {
-                    margin-right: 10px;
-                }
-        
-                .nav-links li a {
-                    color: #140c0c;
-                    text-decoration: none;
-                }
-        
-                .nav-links li a:hover {
-                    color: #00bcd4;
-                }
-        
-                .active {
-                    display: block;
-                }
-        
-                @media screen and (max-width: 768px) {
-                    .nav-links {
-                        display: none;
-                    }
-                    .nav-links.active {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-            </style>
-        </head>
-        <body>
-        
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#portofolio">Portofolio</a></li>
-                <li><a href="#Why Should Me?">Why me?</a></li>
-            </ul>
-        </nav>
-        
-        <script>
-            function toggleMenu() {
-                var navLinks = document.querySelector('.nav-links');
-                navLinks.classList.toggle('active'); // Toggle class 'active' pada menu navigasi
-            }
-        </script>
-        
-        </body>
-        </html>
-        
 
-        
-        
-       
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FFA775;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #C850A7;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: none; /* Sembunyikan menu navigasi secara default */
+        }
+
+        .nav-links.active {
+            display: flex; /* Tampilkan menu navigasi ketika kelas 'active' ditambahkan */
+            flex-direction: column; /* Tampilkan menu secara vertikal */
+        }
+
+        .nav-links li {
+            margin-right: 10px;
+        }
+
+        .nav-links li a {
+            color: #140c0c;
+            text-decoration: none;
+        }
+
+        .nav-links li a:hover {
+            color: #00bcd4;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none; /* Sembunyikan menu navigasi secara default */
+            }
+
+            .nav-links.active {
+                display: flex; /* Tampilkan menu navigasi ketika kelas 'active' ditambahkan */
+                flex-direction: column; /* Tampilkan menu secara vertikal */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#Why Should Me?">Why me?</a></li>
+    </ul>
+</nav>
+
+<script>
+    function toggleMenu() {
+        var navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle class 'active' pada menu navigasi
+    }
+</script>
+
+</body>
+</html>
+            
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
