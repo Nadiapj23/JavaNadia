@@ -88,9 +88,14 @@
             color: #00bcd4;
         }
 
-        @media screen and (max-width: 768px) {
+       @media screen and (max-width: 768px) {
             .nav-links {
-                display: none; /* Sembunyikan menu navigasi secara default */
+                position: absolute;
+                top: 60px; /* Adjust this value based on your navbar height */
+                left: 0;
+                width: 100%;
+                background-color: #C850A7; /* Background color of the mobile menu */
+                padding: 10px; /* Padding for the mobile menu */
             }
 
             .nav-links.active {
